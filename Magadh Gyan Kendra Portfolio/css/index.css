@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');/*"Zen Kurenaido" From Google Fonts 
+                        <style>@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');</style>*/
+
+                        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Zen+Kurenaido&display=swap');/*"Ubuntu" From Google Fonts  
+                        <style>@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Zen+Kurenaido&display=swap');</style>*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');/*"Poppins" from Google Fonts
+                        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');</style>*/
+
+
+/*My color Theme: 
+Here are the hex color codes:
+1. #4D9123
+2. #A7FF70
+3. #84DE4B
+4. #8E1491
+5. #DA4BDE
+*/
+
+:root{
+    --clr-dg: #4D9123;
+    --clr-lg: #A7FF70;
+    --clr-mg: #84DE4B;
+    --clr-dp: #8E1491;
+    --clr-lp: #DA4BDE;
+}
+
+*{                    /*Used for Everything*/
+    padding: 0;
+    margin: 0;    /*Portfolio Style*/
+    box-sizing: border-box;   
+    text-decoration: none;   /*Makes it more BEAUTIFUL*/
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*Navbar Styling starts Here*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 16px 0;
+    /*background: #4D9123;*/
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    position: fixed;
+    padding: 16px 0;
+    background: var(--clr-dg);
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-family: 600;
+}
+
+.img_logo{
+    position: absolute;
+    left: 50px;
+    top: 20px;    
+}
+
+img{
+    border-radius: 50%;
+    border: 2px solid #eee;
+    height: 50px;
+    width: 50px;   
+}
+
+.navbar .logo a span{
+    color: #DA4BDE;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    opacity: 1;
+}
+
+/*Menu Button Styling*/
+.menu-btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Home Styling*/
+.home{
+    display: flex;
+    background: url(/images/BG.jpg) no-repeat center;
+    height: 100vh;
+    color: var(--clr-mg);
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 1px 0;
+}
+
+.home .home-content .text-3 span{
+    color: var(--clr-lp);
+    font-weight: 500;
+}
